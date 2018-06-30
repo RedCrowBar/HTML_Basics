@@ -1,0 +1,66 @@
+<!doctype html> 
+<html> 
+<head> 
+    <title>Заголовок</title> 
+    <meta charset="UTF-8" /> 
+    <link rel="icon" href="favicon.ico" /> 
+    <link rel="stylesheet" href="style.css" /> 
+    <script src="script.js" type="text/javascript"></script> 
+</head> 
+<body> 
+
+	<h1>Заголовок 1</h1>
+	<h2>Заголовок 2</h2>
+	<h3>Заголовок 3</h3>
+	<h4>Заголовок 4</h4>
+	<h5>Заголовок 5</h5>
+	<h6>Заголовок 6</h6>
+	
+    <p><a href="http://webdesign-master.ru" >Здесь я учусь</a></p>
+	<p><a href="kartinka.png" >Рисунок</a></p>
+	<p><em>Текст курсивом</em></p>
+	<p><strong>Жирный текст</strong></p>
+	<p><a href="mailto:dhilko@mail.ru">Письмо самому себе</a></p>
+	
+	<ul>
+		<li> Львы </li>
+		<li> Кашалоты </li>
+		<li> Бегемоты </li>
+		
+	</ul>
+	
+	<ol>
+		<li> Львы </li>
+		<li> Кашалоты </li>
+		<li> Бегемоты </li>
+		
+	</ol>
+	
+	<img src="surikaty.jpg" alt="Семейка сурикатов" />
+	
+	<!-- Формы используются для отправки данных пользователя на сервер -->
+	<form action="путь/до/скрипта">
+		<!-- Для type=text обязательный атрибут name -->
+		<div><input type="text" name="name" placeholder="Введите ваше имя" /></div>
+		<div><input type="text" name="email" placeholder="Введите ваш E-mail" /></div>
+		<div><textarea name="text_0" placeholder="Введите текст" ></textarea></div>
+		<!-- Для type=submit обязательный атрибут value -->
+		<input type="submit" value="Отправить данные" />
+		<!-- Для type=hidden обязательный атрибут value. На форме не виден! Но будет "работать" -->
+		<input type="hidden" value="Значение" />
+		<div>
+			<input type="file" />
+		</div>
+	</form>
+	
+	<!-- Дерево ветвления страницы. HTML DOM страницы -->
+	<div>
+		<!-- span - тег для оформления внутри div без переноса строки -->
+		Текст <span>какой-то текст</span>
+	</div>
+	
+	<div><audio src="muzichka.mp3" controls></audio></div>
+	<div><video src="rolik_chuma.mp4" controls></video></div>
+	
+</body> 
+</html>

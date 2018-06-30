@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Обучающая страница</title> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="favicon.ico" /> 
+	<link rel="stylesheet" type="text/css" href="style.css" /> 
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<h1>Обучающая страница</h1>
+	<h2>Заголовок 2</h2>
+	<h3>Заголовок 3</h3>
+	<h4>Заголовок 4</h4>
+	<h5>Заголовок 5</h5>
+	<h6>Заголовок 6</h6>
+	
+  <p><a href="http://webdesign-master.ru" >Здесь я учусь</a></p>
+	<p><a href="kartinka.png" >Рисунок</a></p>
+	<p><em>Текст курсивом</em></p>
+	<p><strong>Жирный текст</strong></p>
+	<p><a href="mailto:dhilko@yandex.ru">Письмо самому себе</a></p>
+	
+	<ul>
+		<li> Львы </li>
+		<li> Кашалоты </li>
+		<li> Бегемоты </li>
+		
+	</ul>
+	
+	<ol>
+		<li> Львы </li>
+		<li> Кашалоты </li>
+		<li> Бегемоты </li>
+		
+	</ol>
+	
+	<img src="surikaty.jpg" alt="Семейка сурикатов" title="Смешная семейка сурикатов"/>
+
+	<!-- Формы используются для отправки данных пользователя на сервер -->
+	<form action="путь/до/скрипта">
+		<!-- Для type=text обязательный атрибут name -->
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<div>
+				<label for="inpName">Имя: </label><br>
+				<input type="text" name="name" id="inpName" placeholder="Введите ваше имя" />
+			</div>
+			<div>
+				<label for="inpEmail">E-mail: </label><br>
+				<input type="email" name="email" id="inpEmail" placeholder="Введите ваш E-mail" />
+			</div>
+			<div>
+				<label for="inpPhone">Телефон:</label><br>
+				<input type="text" name="phone" id="inpPhone" placeholder="Введите ваш Телефон">
+			</div>
+			<div>
+				<label for="inpFax">Факс: </label><br>
+				<input type="text" name="fax" id="inpFax" placeholder="Введите ваш Факс">
+			</div>
+			<div>
+				<label for="inpURL">Ваш сайт: </label><br>
+				<input type="url" name="site" id="inpURL"></div>
+			<div><input type="submit" value="Отправить"></div>
+		</fieldset>
+		<fieldset>
+				<legend>Отзыв</legend>
+				<div>
+					<label for="text_0">Оставьте здесь ваш отзыв</label><br>
+					<textarea name="text_0" placeholder="Введите текст" ></textarea>
+				</div>
+				<!-- Для type=submit обязательный атрибут value -->
+				<input type="submit" value="Отправить данные" />
+		</fieldset>
+		
+		<!-- Для type=hidden обязательный атрибут value. На форме не виден! Но будет "работать" -->
+		<input type="hidden" value="Значение" />
+		<div>
+			<input type="file" />
+		</div>
+	</form>
+	
+	<form action="https://www.google.ru/" method="GET">
+		<fieldset>
+			<legend>Поиск</legend>
+			<input type="search" name="googleSearch" id="gstaif0" placeholder="Введите запрос">
+			<input type="submit" value="Искать">
+		</fieldset>
+	</form>
+
+	<!-- Дерево ветвления страницы. HTML DOM страницы -->
+	<div>
+		<!-- span - тег для оформления внутри div без переноса строки -->
+		Текст <span>какой-то текст</span>
+	</div>
+	
+	<div><audio src="muzichka.mp3" controls></audio></div>
+	<div><video src="rolik_chuma.mp4" controls></video></div>
+	
+</body>
+</html>
